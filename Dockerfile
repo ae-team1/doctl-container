@@ -1,7 +1,5 @@
 FROM alpine:3.12.4
 
-ENV DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN
-
 RUN cd ~ \
   && wget https://github.com/digitalocean/doctl/releases/download/v1.57.0/doctl-1.57.0-linux-amd64.tar.gz \
   && tar xf ~/doctl-1.57.0-linux-amd64.tar.gz \
